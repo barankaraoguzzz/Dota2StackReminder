@@ -1,0 +1,15 @@
+PODS:
+  - CountdownLabel (3.0.0)
+  - FSPagerView (0.7.1)
+
+DEPENDENCIES:
+  - CountdownLabel
+  - FSPagerView
+
+SPEC CHECKSUMS:
+  CountdownLabel: 4534a68892b1deb73fda18702dfdc2c8444cec08
+  FSPagerView: 958aba39684e1573755ddcfcc29f7eebb8413cee
+
+PODFILE CHECKSUM: e43997c30f6bc7e7fab0b6704516a92d013983ce
+
+COCOAPODS: 1.4.0

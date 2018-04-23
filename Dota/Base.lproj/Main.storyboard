@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dota View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DotaViewController" customModule="Dota" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKY-np-1GT" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrX-M6-baL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZH-bI-uHD">
+                                <rect key="frame" x="56.5" y="529.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0ZH-bI-uHD" secondAttribute="height" id="Us1-vB-DWJ"/>
+                                </constraints>
+                                <state key="normal" image="play-button"/>
+                                <connections>
+                                    <action selector="playButtonAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIo-o8-hTO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFm-dl-hAg">
+                                <rect key="frame" x="244" y="529.5" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XFm-dl-hAg" secondAttribute="height" id="76i-FV-pJL"/>
+                                </constraints>
+                                <color key="tintColor" red="0.69411764710000001" green="0.31372549020000001" blue="0.84959134615384613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="replay"/>
+                                <connections>
+                                    <action selector="resetButtonAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZwA-Ao-zDo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="RO4-Ej-P6L" customClass="CountdownLabel" customModule="CountdownLabel">
+                                <rect key="frame" x="75.5" y="127" width="225" height="80"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingProgress">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingDuration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="morphingCharacterDelay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YKY-np-1GT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Fc-Lg-eUF"/>
+                            <constraint firstItem="0ZH-bI-uHD" firstAttribute="centerX" secondItem="RrX-M6-baL" secondAttribute="centerX" multiplier="0.5" id="3E2-eC-bQe"/>
+                            <constraint firstItem="XFm-dl-hAg" firstAttribute="width" secondItem="0ZH-bI-uHD" secondAttribute="width" id="3Mt-Z1-eUX"/>
+                            <constraint firstItem="RO4-Ej-P6L" firstAttribute="centerY" secondItem="RrX-M6-baL" secondAttribute="centerY" multiplier="0.5" id="Baw-Ye-CQt"/>
+                            <constraint firstItem="XFm-dl-hAg" firstAttribute="centerY" secondItem="0ZH-bI-uHD" secondAttribute="centerY" id="CrV-NG-n0A"/>
+                            <constraint firstItem="XFm-dl-hAg" firstAttribute="centerX" secondItem="RrX-M6-baL" secondAttribute="centerX" multiplier="1.5" id="EAy-vy-5zh"/>
+                            <constraint firstItem="RrX-M6-baL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Egu-pd-xli"/>
+                            <constraint firstItem="YKY-np-1GT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KyM-LW-sLD"/>
+                            <constraint firstItem="0ZH-bI-uHD" firstAttribute="centerY" secondItem="RrX-M6-baL" secondAttribute="centerY" multiplier="1.7" id="LAY-8a-lxa"/>
+                            <constraint firstItem="RO4-Ej-P6L" firstAttribute="height" secondItem="RrX-M6-baL" secondAttribute="height" multiplier="0.12" id="XEV-Uq-zzq"/>
+                            <constraint firstItem="RO4-Ej-P6L" firstAttribute="width" secondItem="RrX-M6-baL" secondAttribute="width" multiplier="0.6" id="Y5p-PG-PF6"/>
+                            <constraint firstItem="YKY-np-1GT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YnP-Ws-nt6"/>
+                            <constraint firstAttribute="bottom" secondItem="RrX-M6-baL" secondAttribute="bottom" id="Z2N-8q-70a"/>
+                            <constraint firstItem="RO4-Ej-P6L" firstAttribute="centerX" secondItem="RrX-M6-baL" secondAttribute="centerX" id="f51-XK-f8p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RrX-M6-baL" secondAttribute="trailing" id="lQM-IK-3ss"/>
+                            <constraint firstItem="YKY-np-1GT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oDJ-OQ-l9p"/>
+                            <constraint firstItem="0ZH-bI-uHD" firstAttribute="width" secondItem="RrX-M6-baL" secondAttribute="width" multiplier="0.2" id="vkZ-hs-0IO"/>
+                            <constraint firstItem="RrX-M6-baL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zuf-gM-PMv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="RO4-Ej-P6L" id="Eoj-mT-qU5"/>
+                        <outlet property="gradiendView" destination="RrX-M6-baL" id="D7i-yU-4aq"/>
+                        <outlet property="pagerView" destination="YKY-np-1GT" id="lj0-Jc-8cj"/>
+                        <outlet property="playButton" destination="0ZH-bI-uHD" id="0cB-IX-L60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play-button" width="410" height="410"/>
+        <image name="replay" width="410" height="410"/>
+    </resources>
 </document>

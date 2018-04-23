@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E357BF2B8517F820D0B9A8C /* Pods_Dota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430297FB8B4A3CD0D219EF39 /* Pods_Dota.framework */; };
 		95720966208E8428001FFA54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95720965208E8428001FFA54 /* AppDelegate.swift */; };
-		95720968208E8428001FFA54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95720967208E8428001FFA54 /* ViewController.swift */; };
+		95720968208E8428001FFA54 /* DotaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95720967208E8428001FFA54 /* DotaViewController.swift */; };
 		9572096B208E8428001FFA54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95720969208E8428001FFA54 /* Main.storyboard */; };
 		9572096D208E8428001FFA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9572096C208E8428001FFA54 /* Assets.xcassets */; };
 		95720970208E8428001FFA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9572096E208E8428001FFA54 /* LaunchScreen.storyboard */; };
+		95720979208E895C001FFA54 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95720978208E895C001FFA54 /* CALayerExtension.swift */; };
+		95720983208EA368001FFA54 /* Music_default_quest_complete_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9572097D208EA367001FFA54 /* Music_default_quest_complete_01.mp3 */; };
+		95720984208EA368001FFA54 /* Music_default_stinger03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9572097E208EA367001FFA54 /* Music_default_stinger03.mp3 */; };
+		95720985208EA368001FFA54 /* Music_default_ganked_lg_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9572097F208EA367001FFA54 /* Music_default_ganked_lg_01.mp3 */; };
+		95720986208EA368001FFA54 /* Music_default_gank_md_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95720980208EA367001FFA54 /* Music_default_gank_md_01.mp3 */; };
+		95720987208EA368001FFA54 /* Music_default_ganked_med_02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95720981208EA367001FFA54 /* Music_default_ganked_med_02.mp3 */; };
+		95720988208EA368001FFA54 /* Music_default_stinger01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 95720982208EA368001FFA54 /* Music_default_stinger01.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430297FB8B4A3CD0D219EF39 /* Pods_Dota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95720962208E8428001FFA54 /* Dota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95720965208E8428001FFA54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95720967208E8428001FFA54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95720967208E8428001FFA54 /* DotaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaViewController.swift; sourceTree = "<group>"; };
 		9572096A208E8428001FFA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9572096C208E8428001FFA54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9572096F208E8428001FFA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95720971208E8428001FFA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95720978208E895C001FFA54 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		9572097D208EA367001FFA54 /* Music_default_quest_complete_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_quest_complete_01.mp3; sourceTree = "<group>"; };
+		9572097E208EA367001FFA54 /* Music_default_stinger03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_stinger03.mp3; sourceTree = "<group>"; };
+		9572097F208EA367001FFA54 /* Music_default_ganked_lg_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_ganked_lg_01.mp3; sourceTree = "<group>"; };
+		95720980208EA367001FFA54 /* Music_default_gank_md_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_gank_md_01.mp3; sourceTree = "<group>"; };
+		95720981208EA367001FFA54 /* Music_default_ganked_med_02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_ganked_med_02.mp3; sourceTree = "<group>"; };
+		95720982208EA368001FFA54 /* Music_default_stinger01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music_default_stinger01.mp3; sourceTree = "<group>"; };
+		AE6CFD49DD2140B46CD80197 /* Pods-Dota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dota/Pods-Dota.debug.xcconfig"; sourceTree = "<group>"; };
+		B3D5EF31E5CF7583E57CBDBC /* Pods-Dota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dota.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dota/Pods-Dota.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E357BF2B8517F820D0B9A8C /* Pods_Dota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7170DFED0AFDC49D3A2D88A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				430297FB8B4A3CD0D219EF39 /* Pods_Dota.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		95720959208E8428001FFA54 = {
 			isa = PBXGroup;
 			children = (
 				95720964208E8428001FFA54 /* Dota */,
 				95720963208E8428001FFA54 /* Products */,
+				F49EB83DDC61C11251B9A72E /* Pods */,
+				7170DFED0AFDC49D3A2D88A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +83,46 @@
 		95720964208E8428001FFA54 /* Dota */ = {
 			isa = PBXGroup;
 			children = (
+				9572097C208EA359001FFA54 /* Sounds */,
+				95720977208E894E001FFA54 /* Extensions */,
 				95720965208E8428001FFA54 /* AppDelegate.swift */,
-				95720967208E8428001FFA54 /* ViewController.swift */,
+				95720967208E8428001FFA54 /* DotaViewController.swift */,
 				95720969208E8428001FFA54 /* Main.storyboard */,
 				9572096C208E8428001FFA54 /* Assets.xcassets */,
 				9572096E208E8428001FFA54 /* LaunchScreen.storyboard */,
 				95720971208E8428001FFA54 /* Info.plist */,
 			);
 			path = Dota;
+			sourceTree = "<group>";
+		};
+		95720977208E894E001FFA54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95720978208E895C001FFA54 /* CALayerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9572097C208EA359001FFA54 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				95720980208EA367001FFA54 /* Music_default_gank_md_01.mp3 */,
+				9572097F208EA367001FFA54 /* Music_default_ganked_lg_01.mp3 */,
+				95720981208EA367001FFA54 /* Music_default_ganked_med_02.mp3 */,
+				9572097D208EA367001FFA54 /* Music_default_quest_complete_01.mp3 */,
+				95720982208EA368001FFA54 /* Music_default_stinger01.mp3 */,
+				9572097E208EA367001FFA54 /* Music_default_stinger03.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		F49EB83DDC61C11251B9A72E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE6CFD49DD2140B46CD80197 /* Pods-Dota.debug.xcconfig */,
+				B3D5EF31E5CF7583E57CBDBC /* Pods-Dota.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95720974208E8428001FFA54 /* Build configuration list for PBXNativeTarget "Dota" */;
 			buildPhases = (
+				4458C8020329E4E24CC52671 /* [CP] Check Pods Manifest.lock */,
 				9572095E208E8428001FFA54 /* Sources */,
 				9572095F208E8428001FFA54 /* Frameworks */,
 				95720960208E8428001FFA54 /* Resources */,
+				7823013B135A1C98BC36EB23 /* [CP] Embed Pods Frameworks */,
+				DFA63F862747C1A5565ABEB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,20 +187,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95720986208EA368001FFA54 /* Music_default_gank_md_01.mp3 in Resources */,
+				95720987208EA368001FFA54 /* Music_default_ganked_med_02.mp3 in Resources */,
+				95720984208EA368001FFA54 /* Music_default_stinger03.mp3 in Resources */,
 				95720970208E8428001FFA54 /* LaunchScreen.storyboard in Resources */,
 				9572096D208E8428001FFA54 /* Assets.xcassets in Resources */,
 				9572096B208E8428001FFA54 /* Main.storyboard in Resources */,
+				95720988208EA368001FFA54 /* Music_default_stinger01.mp3 in Resources */,
+				95720985208EA368001FFA54 /* Music_default_ganked_lg_01.mp3 in Resources */,
+				95720983208EA368001FFA54 /* Music_default_quest_complete_01.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4458C8020329E4E24CC52671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dota-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7823013B135A1C98BC36EB23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dota/Pods-Dota-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountdownLabel/CountdownLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountdownLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dota/Pods-Dota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA63F862747C1A5565ABEB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dota/Pods-Dota-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9572095E208E8428001FFA54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95720968208E8428001FFA54 /* ViewController.swift in Sources */,
+				95720979208E895C001FFA54 /* CALayerExtension.swift in Sources */,
+				95720968208E8428001FFA54 /* DotaViewController.swift in Sources */,
 				95720966208E8428001FFA54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +399,13 @@
 		};
 		95720975208E8428001FFA54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6CFD49DD2140B46CD80197 /* Pods-Dota.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R6EJFFJ276;
+				DEVELOPMENT_TEAM = K5795Q9X7C;
 				INFOPLIST_FILE = Dota/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingMind.Dota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +416,13 @@
 		};
 		95720976208E8428001FFA54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D5EF31E5CF7583E57CBDBC /* Pods-Dota.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R6EJFFJ276;
+				DEVELOPMENT_TEAM = K5795Q9X7C;
 				INFOPLIST_FILE = Dota/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodingMind.Dota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
