@@ -84,6 +84,7 @@ extension DotaViewController{
     }
     
     func labelCongigure() {
+        
         countLabel.animationType = .Scale
         countLabel.setCountDownTime(minutes: 120)
         countLabel.timeFormat = "mm:ss"
@@ -117,7 +118,7 @@ extension DotaViewController : FSPagerViewDelegate, FSPagerViewDataSource {
 //Mark: -For Slider
 extension DotaViewController: CountdownLabelDelegate {
     func countdownFinished() {
-        labelCongigure()
+        
     }
     func countingAt(timeCounted: TimeInterval, timeRemaining: TimeInterval) {
         if timeCounted == 30.0 {
@@ -130,9 +131,11 @@ extension DotaViewController: CountdownLabelDelegate {
             self.playTrackOrPlaylist(resource: voiceURL.stack4.rawValue)
         } else if timeCounted == 110 {
             self.playTrackOrPlaylist(resource: voiceURL.rune.rawValue)
+        } else if timeCounted == 119 {
+            countLabel.setCountDownTime(minutes: 120)
         }
-//        debugPrint("time counted at delegate=\(timeCounted)")
-//        debugPrint("time remaining at delegate=\(timeRemaining)")
+        debugPrint("time counted at delegate=\(timeCounted)")
+        debugPrint("time remaining at delegate=\(timeRemaining)")
     }
     
 }
